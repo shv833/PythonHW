@@ -48,7 +48,7 @@ def task560():
                 print(ch, sum1)
                 f = sum1
 
-if name == "main":
+if __name__ == "main":
     print("Task182: ")
     task182()
     print("Task323: ")
