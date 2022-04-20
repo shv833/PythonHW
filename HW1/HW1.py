@@ -1,5 +1,5 @@
 """дз 182,  323,  560"""
-#182
+# 182
 def task182():
     n = int(input("enter n: "))
     list = [int(input()) for i in range(0, n)]
@@ -13,7 +13,7 @@ def task182():
 
     print(amount, sum, sep=", ")
 
-#323
+# 323
 def task323():
     n = int(input("enter n: "))
     tmp = n-1
@@ -22,16 +22,16 @@ def task323():
             tmp1 = tmp
             tmp2 = i
             while tmp2 != 0 and tmp1 != 0:
-                if tmp2>tmp1:
+                if tmp2 > tmp1:
                     tmp2 = tmp2 % tmp1
                 else:
                     tmp1 = tmp1 % tmp2
 
-            if tmp2+tmp1==1:
+            if tmp2+tmp1 == 1:
                 print(tmp, i, sep=", ")
         tmp -= 1
 
-#560
+# 560
 def task560():
     f = 0
     for ch in range(200, 301):
@@ -48,7 +48,8 @@ def task560():
                 print(ch, sum1)
                 f = sum1
 
-if __name__ == "main":
+
+if __name__ == "__main__":
     print("Task182: ")
     task182()
     print("Task323: ")
