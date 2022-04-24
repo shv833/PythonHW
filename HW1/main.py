@@ -27,8 +27,7 @@ def task_182(number: int, array: list[int]) -> tuple:
         which are divisible by 5 and not divisible by 7
     """
     assert is_natural_number(number), "The number should be natural"
-    assert has_int_in_list(
-        random_list), "The list should have integer elements"
+    assert has_int_in_list(array), "The list should have integer elements"
 
     amount = 0
     sum_res = 0
@@ -87,7 +86,7 @@ def task_560() -> list:
 
 
 if __name__ == "__main__":
-    NUMBER = 3
+    NUMBER = 5
     random_list = []
 
     assert is_natural_number(NUMBER), "Number should be natural"
@@ -95,10 +94,9 @@ if __name__ == "__main__":
     while len(random_list) != NUMBER:
         random_list.append(random.randint(1, 100))
 
-    random_list = [21, 23, 2]
-
     assert has_int_in_list(
         random_list), "The list should have integer elements"
+
     print("Task182: ")
     print("Given list ", random_list)
     print(task_182(NUMBER, random_list))
