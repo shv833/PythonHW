@@ -1,5 +1,6 @@
 """This module contains realisation of task 182."""
-from utils import is_natural_number, has_int_in_list
+from utils import (is_natural_number,
+                    has_int_in_list)
 
 
 def task_182(number: int, array: list[int]) -> tuple:

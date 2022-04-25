@@ -4,25 +4,8 @@ import random
 from tasks.task_182 import task_182
 from tasks.task_323 import task_323
 from tasks.task_560 import task_560
-
-
-def is_natural_number(number: int) -> bool:
-    """
-    Returns True if the number is natural.
-    """
-    return isinstance(number, int) and number > 0
-
-def has_int_in_list(array: list[int]) -> bool:
-    """
-    Returns True if the list has integer elements.
-    """
-    tmp: bool
-    for i in array:
-        if not isinstance(i, int):
-            return False
-        tmp = True
-
-    return tmp
+from tasks.utils import (is_natural_number,
+                        has_int_in_list)
 
 
 if __name__ == "__main__":
