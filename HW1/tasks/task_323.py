@@ -1,9 +1,6 @@
 """This module contains realisation of task 323."""
-def is_natural_number(number: int) -> bool:
-    """
-    Returns True if the number is natural
-    """
-    return isinstance(number, int) and number > 0
+from utils import is_natural_number
+
 
 def task_323(number: int) -> list:
     """

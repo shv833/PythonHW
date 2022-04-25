@@ -18,18 +18,18 @@ class Task86bTests(unittest.TestCase):
         """
         This method is for testing the TypeError.
         """
-        with self.assertRaises(TypeError):
+        with self.assertRaises(AssertionError):
             task_86b("!22")
-        with self.assertRaises(TypeError):
+        with self.assertRaises(AssertionError):
             task_86b([])
 
     def test_value(self):
         """
         This method is for testing the ValueError.
         """
-        with self.assertRaises(ValueError):
+        with self.assertRaises(AssertionError):
             task_86b(0)
-        with self.assertRaises(ValueError):
+        with self.assertRaises(AssertionError):
             task_86b(-23)
 
     def test_negative(self):

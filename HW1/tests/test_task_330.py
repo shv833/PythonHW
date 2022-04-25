@@ -18,18 +18,18 @@ class Task330Tests(unittest.TestCase):
         """
         This method is for testing the TypeError.
         """
-        with self.assertRaises(TypeError):
+        with self.assertRaises(AssertionError):
             task_330("!22")
-        with self.assertRaises(TypeError):
+        with self.assertRaises(AssertionError):
             task_330([])
 
     def test_value(self):
         """
         This method is for testing the ValueError.
         """
-        with self.assertRaises(ValueError):
+        with self.assertRaises(AssertionError):
             task_330(0)
-        with self.assertRaises(ValueError):
+        with self.assertRaises(AssertionError):
             task_330(-23)
 
     def test_negative(self):

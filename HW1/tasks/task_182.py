@@ -1,21 +1,6 @@
 """This module contains realisation of task 182."""
-def is_natural_number(number: int) -> bool:
-    """
-    Returns True if the number is natural.
-    """
-    return isinstance(number, int) and number > 0
+from utils import is_natural_number, has_int_in_list
 
-def has_int_in_list(array: list[int]) -> bool:
-    """
-    Returns True if the list has integer elements.
-    """
-    tmp: bool
-    for i in array:
-        if not isinstance(i, int):
-            return False
-        tmp = True
-
-    return tmp
 
 def task_182(number: int, array: list[int]) -> tuple:
     """
