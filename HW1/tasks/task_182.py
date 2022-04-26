@@ -1,12 +1,12 @@
 """This module contains realisation of task 182."""
+
 from utils import (is_natural_number,
                     has_int_in_list)
 
 
 def task_182(number: int, array: list[int]) -> tuple:
-    """
-    Returns amount and sum of elements
-        which are divisible by 5 and not divisible by 7.
+    """Returns amount and sum of elements
+    which are divisible by 5 and not divisible by 7.
     """
     assert is_natural_number(number), "The number should be natural"
     assert has_int_in_list(array), "The list should have integer elements"

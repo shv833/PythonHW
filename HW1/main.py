@@ -1,4 +1,5 @@
 """This module let us check my algotasks:)"""
+
 import random
 
 from tasks.task_182 import task_182

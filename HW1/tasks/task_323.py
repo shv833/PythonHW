@@ -1,11 +1,10 @@
 """This module contains realisation of task 323."""
+
 from utils import is_natural_number
 
 
 def task_323(number: int) -> list:
-    """
-    Returns all natural numbers less than n and coprime with it.
-    """
+    """Returns all natural numbers less than n and coprime with it."""
     assert is_natural_number(number), "The number should be natural"
 
     tmp = number - 1

@@ -1,8 +1,7 @@
 """This module contains realisation of task 560."""
+
 def task_560() -> list:
-    """
-    Returns all pairs of friendly numbers between 200 and 300.
-    """
+    """Returns all pairs of friendly numbers between 200 and 300."""
     tmp = 0
     array = []
     for k in range(200, 301):
