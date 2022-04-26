@@ -5,7 +5,7 @@ import unittest
 from tasks.task_330 import task_330
 
 
-class Task330Tests(unittest.TestCase):
+class TestTask330(unittest.TestCase):
     """This class is for testing function task_86b."""
     
     def test_valid(self):
